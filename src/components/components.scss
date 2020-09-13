@@ -1,0 +1,493 @@
+@import '../styles/variables';
+
+/* ******************************
+* Foundations Page
+********************************/
+
+// 01. Colors
+.Colors {
+  width: 220px;
+  height: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  &__color {
+    height: 120px;
+  }
+  &__details {
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+  &__colorName {
+    margin-bottom: 8px;
+  }
+
+  &--brand-primary &__color {
+    background-color: $brand-primary;
+  }
+  &--brand-primary-light &__color {
+    background-color: $brand-primary-light;
+  }
+  &--brand-secondary &__color {
+    background-color: $brand-secondary;
+  }
+  &--brand-secondary-light &__color {
+    background-color: $brand-secondary-light;
+  }
+  &--ui-text-primary &__color {
+    background-color: $ui-text-primary;
+  }
+  &--ui-text-secondary &__color {
+    background-color: $ui-text-secondary;
+  }
+  &--ui-text-tertiary &__color {
+    background-color: $ui-text-tertiary;
+  }
+  &--ui-text-success &__color {
+    background-color: $ui-text-success;
+  }
+  &--ui-text-error &__color {
+    background-color: $ui-text-error;
+  }
+  &--ui-text-white &__color {
+    background-color: $ui-text-white;
+  }
+  &--ui-text-link &__color {
+    background-color: $ui-text-link;
+  }
+  &--ui-element-primary &__color {
+    background-color: $ui-element-primary;
+  }
+  &--ui-element-secondary &__color {
+    background-color: $ui-element-secondary;
+  }
+  &--ui-element-tertiary &__color {
+    background-color: $ui-element-tertiary;
+  }
+  &--ui-element-success &__color {
+    background-color: $ui-element-success;
+  }
+  &--ui-element-error &__color {
+    background-color: $ui-element-error;
+  }
+  &--ui-element-neutral &__color {
+    background-color: $ui-element-neutral;
+  }
+  &--ui-element-overlay &__color {
+    background-color: $ui-element-overlay;
+  }
+}
+
+// 02. Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $ui-text-primary;
+  font-weight: 600;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+
+p {
+  color: $ui-text-secondary;
+}
+
+// 03. Shadows
+.Shadows {
+  width: 68px;
+  height: 68px;
+  background-color: #fff;
+  &--1 {
+    box-shadow: inset 0px -1px 0px #eaeaea;
+  }
+  &--2 {
+    box-shadow: 0px 2px 10px rgba(25, 1, 52, 0.12);
+  }
+  &--3 {
+    box-shadow: 0px 4px 10px rgba(25, 1, 52, 0.16);
+  }
+  &--4 {
+    box-shadow: inset 0px 1px 0px #eaeaea;
+  }
+  &--5 {
+    box-shadow: 0px -2px 10px rgba(25, 1, 52, 0.12);
+  }
+  &--6 {
+    box-shadow: 0px -4px 10px rgba(25, 1, 52, 0.16);
+  }
+}
+
+/* ******************************
+* Elements Page
+********************************/
+
+// 01. Buttons
+.Button {
+  border-radius: 24px;
+  min-width: 70px;
+  min-height: 36px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &--primary-default {
+    background-color: $brand-primary;
+    color: #fff;
+  }
+  &--primary-outline {
+    background-color: #fff;
+    color: $brand-primary;
+    border: 1px solid $brand-primary;
+  }
+  &--primary-minimal {
+    background-color: #fff;
+    color: $brand-primary;
+  }
+  &--secondary-default {
+    background-color: $brand-secondary;
+    color: #fff;
+  }
+  &--secondary-outline {
+    background-color: #fff;
+    color: $brand-secondary;
+    border: 1px solid $brand-secondary;
+  }
+  &--secondary-minimal {
+    background-color: #fff;
+    color: $brand-secondary;
+  }
+  &--icon-default {
+    background-color: #fff;
+    min-width: auto;
+  }
+  &--state-primary-hover {
+    background-color: $brand-primary-light;
+    color: #fff;
+  }
+  &--state-primary-active {
+    background-color: $brand-primary;
+    color: #fff;
+  }
+  &--state-primary-loading {
+    background-color: $brand-primary;
+  }
+  &--state-secondary-hover {
+    background-color: $brand-secondary-light;
+    color: #fff;
+  }
+  &--state-secondary-active {
+    background-color: $brand-secondary;
+    color: #fff;
+  }
+  &--state-secondary-loading {
+    background-color: $brand-secondary;
+  }
+  &--state-global-success {
+    background-color: $ui-text-success;
+  }
+  &--state-global-error {
+    background-color: $ui-text-error;
+  }
+  &--state-global-disabled {
+    background-color: #fff;
+    color: $ui-element-tertiary;
+  }
+}
+
+// 02. Input
+.Input {
+  border-radius: 24px;
+  width: 288px;
+  line-height: 140%;
+  font-size: 16px;
+  padding: 8px 16px;
+  color: $ui-text-secondary;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+
+  &--normal {
+    border: 1px solid $ui-element-tertiary;
+  }
+  &--hover {
+    border: 1px solid $ui-element-secondary;
+  }
+  &--active {
+    border: 2px solid $ui-element-secondary;
+  }
+  &--error {
+    border: 1px solid $ui-element-error;
+    background-image: url('../images/alertOctagon.svg');
+  }
+  &--success {
+    border: 1px solid $ui-element-success;
+    background-image: url('../images/checkGreen.svg');
+  }
+  &--disable {
+    border: 1px solid $ui-element-tertiary;
+    background-color: $ui-element-inactive;
+  }
+  &--password {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../images/blindUser.svg');
+  }
+  &--date {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../images/calendar.svg');
+  }
+  &--search {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../images/search.svg');
+  }
+}
+
+// 03. Select
+.Select {
+  @extend .Input;
+
+  // Hide browser default dropdown
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+
+  &--normal {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../images/chevronUpDown.svg');
+  }
+  &--hover {
+    border: 1px solid $ui-element-secondary;
+    background-image: url('../images/chevronUpDown.svg');
+  }
+  &--active {
+    border: 2px solid $ui-element-secondary;
+    background-image: url('../images/chevronUpDown.svg');
+  }
+  &--disable {
+    border: 1px solid $ui-element-tertiary;
+    background-color: $ui-element-inactive;
+    background-image: url('../images/chevronUpDown.svg');
+  }
+}
+
+// 04. Textarea
+.Textarea {
+  border: 1px solid $ui-element-tertiary;
+  border-radius: 24px;
+  color: $ui-text-secondary;
+  padding: 16px;
+  min-height: 150px;
+  min-width: 288px;
+  font-family: $open-sans;
+  background-repeat: no-repeat;
+  background-position: 95% 10px;
+
+  &--normal {
+    border: 1px solid $ui-element-tertiary;
+  }
+  &--hover {
+    border: 1px solid $ui-element-secondary;
+  }
+  &--active {
+    border: 2px solid $ui-element-secondary;
+  }
+  &--error {
+    border: 1px solid $ui-element-error;
+    background-image: url('../images/alertOctagon.svg');
+  }
+  &--success {
+    border: 1px solid $ui-element-success;
+    background-image: url('../images/checkGreen.svg');
+  }
+  &--disable {
+    border: 1px solid $ui-element-tertiary;
+    background-color: $ui-element-inactive;
+  }
+}
+
+// 05. Checkboxes
+
+.Checkbox {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  &--normal {
+    background-image: url('../images/checkbox/CheckboxNormal.svg');
+  }
+  &--hover {
+    background-image: url('../images/checkbox/CheckboxHover.svg');
+  }
+  &--disabled {
+    background-image: url('../images/checkbox/CheckboxDisable.svg');
+  }
+  &--selected {
+    background-image: url('../images/checkbox/CheckboxSelected.svg');
+  }
+  &--undetermined {
+    background-image: url('../images/checkbox/CheckboxUndetermined.svg');
+  }
+  &--disableSelected {
+    background-image: url('../images/checkbox/CheckboxDisableSelected.svg');
+  }
+  &--disableUndetermined {
+    background-image: url('../images/checkbox/CheckboxDisableUndetermined.svg');
+  }
+}
+
+// 06. Radio Buttons
+.RadioButton {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  &--normal {
+    background-image: url('../images/radio/RadioNormal.svg');
+  }
+  &--hover {
+    background-image: url('../images/radio/RadioHover.svg');
+  }
+  &--selected {
+    background-image: url('../images/radio/RadioSelected.svg');
+  }
+  &--disable {
+    background-image: url('../images/radio/RadioDisable.svg');
+  }
+  &--disableSelected {
+    background-image: url('../images/radio/RadioDisableSelected.svg');
+  }
+}
+
+// 06. Toggle
+.Toggle {
+  width: 54px;
+  height: 20px;
+  display: inline-block;
+  &--normal {
+    background-image: url('../images/toggle/ToggleNormal.svg');
+  }
+  &--hover {
+    background-image: url('../images/toggle/ToggleHover.svg');
+  }
+  &--active {
+    background-image: url('../images/toggle/ToggleActive.svg');
+  }
+  &--disableOff {
+    background-image: url('../images/toggle/ToggleDisableInactive.svg');
+  }
+  &--disableOn {
+    background-image: url('../images/toggle/ToggleDisableActive.svg');
+  }
+}
+
+// 07. ListItem
+.ListItem {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 288px;
+  .icon {
+    display: none;
+  }
+  .item {
+    color: $ui-text-primary;
+    margin-bottom: 5px;
+  }
+  .subtitle {
+    color: $ui-text-secondary;
+    font-size: 14;
+  }
+  .flex-item:first-child {
+    display: flex;
+    .icon {
+      margin-right: 8px;
+    }
+  }
+  .flex-item:last-child {
+    font-weight: bold;
+    display: flex;
+    img {
+      margin-left: 8px;
+    }
+  }
+
+  &--subitem {
+    padding: 9px;
+  }
+  &--tiny {
+    padding: 8px;
+    font-size: 14px;
+    .item {
+      color: $ui-text-secondary;
+    }
+    .flex-item:last-child {
+      color: $ui-text-secondary;
+    }
+  }
+  &--item5 {
+    .icon {
+      display: block;
+    }
+  }
+  &--item6 {
+    .icon {
+      display: block;
+    }
+  }
+}
+
+// 08. Avatar
+.Avatar {
+  object-fit: cover;
+  &--xs {
+    width: 8px;
+    height: 8px;
+  }
+  &--s {
+    width: 16px;
+    height: 16px;
+  }
+  &--m {
+    width: 32px;
+    height: 32px;
+  }
+  &--l {
+    width: 48px;
+    height: 48px;
+  }
+  &--xl {
+    width: 64px;
+    height: 64px;
+  }
+  &--xxl {
+    width: 80px;
+    height: 80px;
+  }
+  &--xxxl {
+    width: 96px;
+    height: 96px;
+  }
+}
