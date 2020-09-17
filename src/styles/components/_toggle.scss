@@ -1,0 +1,35 @@
+.Toggle {
+  width: 54px;
+  height: 20px;
+  display: inline-block;
+  &--normal {
+    background-image: url('../../images/toggle/ToggleNormal.svg');
+  }
+  &--hover {
+    background-image: url('../../images/toggle/ToggleHover.svg');
+  }
+  &--active {
+    background-image: url('../../images/toggle/ToggleActive.svg');
+  }
+  &--false {
+    background-image: url('../../images/toggle/ToggleNormal.svg');
+  }
+  &--true {
+    background-image: url('../../images/toggle/ToggleActive.svg');
+  }
+  &--disableOff {
+    background-image: url('../../images/toggle/ToggleDisableInactive.svg');
+  }
+  &--disableOn {
+    background-image: url('../../images/toggle/ToggleDisableActive.svg');
+  }
+  &--false:hover {
+    background-image: url('../../images/toggle/ToggleHover.svg');
+  }
+  &--disableOff:hover {
+    background-image: url('../../images/toggle/ToggleDisableInactive.svg');
+  }
+  &--disableOn:hover {
+    background-image: url('../../images/toggle/ToggleDisableActive.svg');
+  }
+}

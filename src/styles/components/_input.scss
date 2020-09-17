@@ -1,0 +1,53 @@
+.Input {
+  border-radius: 24px;
+  width: 288px;
+  line-height: 140%;
+  font-size: 16px;
+  padding: 8px 16px;
+  color: $ui-text-secondary;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  outline: none;
+
+  &--normal {
+    border: 1px solid $ui-element-tertiary;
+  }
+  &--hover {
+    border: 1px solid $ui-element-secondary;
+  }
+  &--active {
+    border: 2px solid $ui-element-secondary;
+  }
+  &--error {
+    border: 1px solid $ui-element-error;
+    background-image: url('../../images/alertOctagon.svg');
+  }
+  &--success {
+    border: 1px solid $ui-element-success;
+    background-image: url('../../images/checkGreen.svg');
+  }
+  &--disable {
+    border: 1px solid $ui-element-tertiary;
+    background-color: $ui-element-inactive;
+  }
+  &--password {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../../images/blindUser.svg');
+  }
+  &--date {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../../images/calendar.svg');
+  }
+  &--search {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../../images/search.svg');
+  }
+
+  &:hover {
+    border: 1px solid $ui-element-secondary;
+  }
+
+  &:focus {
+    border: 2px solid $ui-element-secondary;
+  }
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import './components.scss';
 
 const Button = (props) => {
   let content;
@@ -13,7 +12,8 @@ const Button = (props) => {
 
   return (
     <button
-      className={'Button Button--' + props.modifier}
+      className={`Button Button--${props.modifier} ${props.className}`}
+      id={props.id}
       disabled={isDisabled}
     >
       {content}

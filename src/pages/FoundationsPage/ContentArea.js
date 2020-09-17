@@ -7,7 +7,7 @@ function ContentArea() {
   return (
     <main className="ContentArea">
       <h1>Foundation Elements</h1>
-      <p>
+      <p className="light-text">
         Here’s the very basic for Flamingo Web, either being color variables or
         text identificationn.
       </p>

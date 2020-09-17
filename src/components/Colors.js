@@ -1,5 +1,4 @@
 import React from 'react';
-import './components.scss';
 
 const Colors = (props) => {
   let opacityText;

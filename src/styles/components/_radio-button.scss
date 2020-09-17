@@ -1,0 +1,55 @@
+.RadioButton {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  // &--normal {
+  //   background-image: url('../images/radio/RadioNormal.svg');
+  // }
+  // &--hover {
+  //   background-image: url('../images/radio/RadioHover.svg');
+  // }
+  // &--selected {
+  //   background-image: url('../images/radio/RadioSelected.svg');
+  // }
+  // &--disable {
+  //   background-image: url('../images/radio/RadioDisable.svg');
+  // }
+  // &--disableSelected {
+  //   background-image: url('../images/radio/RadioDisableSelected.svg');
+  // }
+  // &--true {
+  //   background-image: url('../images/radio/RadioSelected.svg');
+  // }
+
+  input {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+  }
+  input:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: url('../../images/radio/RadioNormal.svg');
+    height: 20px;
+    width: 20px;
+    visibility: visible;
+  }
+  input:checked::before {
+    background-image: url('../../images/radio/RadioSelected.svg');
+  }
+  input.disable::before {
+    background-image: url('../../images/radio/RadioDisable.svg');
+  }
+  input.disableSelected::before {
+    background-image: url('../../images/radio/RadioDisableSelected.svg');
+  }
+
+  input:not(:checked):hover::before {
+    background-image: url('../../images/radio/RadioHover.svg');
+  }
+  input.disable:hover::before {
+    background-image: url('../../images/radio/RadioDisable.svg');
+  }
+}

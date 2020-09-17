@@ -1,0 +1,38 @@
+.Checkbox {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  &--normal {
+    background-image: url('../../images/checkbox/CheckboxNormal.svg');
+  }
+  &--selected {
+    background-image: url('../../images/checkbox/CheckboxSelected.svg');
+  }
+  &--hover {
+    background-image: url('../../images/checkbox/CheckboxHover.svg');
+  }
+  &--true {
+    background-image: url('../../images/checkbox/CheckboxSelected.svg');
+  }
+  &--undetermined {
+    background-image: url('../../images/checkbox/CheckboxUndetermined.svg');
+  }
+  &--false {
+    background-image: url('../../images/checkbox/CheckboxNormal.svg');
+  }
+  &--disabled {
+    background-image: url('../../images/checkbox/CheckboxDisable.svg');
+  }
+  &--disableSelected {
+    background-image: url('../../images/checkbox/CheckboxDisableSelected.svg');
+  }
+  &--disableUndetermined {
+    background-image: url('../../images/checkbox/CheckboxDisableUndetermined.svg');
+  }
+  &--false:hover {
+    background-image: url('../../images/checkbox/CheckboxHover.svg');
+  }
+  &--disabled:hover {
+    background-image: url('../../images/checkbox/CheckboxDisable.svg');
+  }
+}

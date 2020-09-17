@@ -1,10 +1,12 @@
 import React from 'react';
-import './components.scss';
 import navArrow from '../images/navArrow.svg';
 
 const ListItem = (props) => {
   return (
-    <div className={'ListItem ListItem--' + props.modifier}>
+    <div
+      className={`ListItem ListItem--${props.modifier} ${props.className}`}
+      id={props.id}
+    >
       <div className="flex-item">
         <div className="icon">
           <img src={props.icon} alt="" />

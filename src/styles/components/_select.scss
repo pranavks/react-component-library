@@ -1,0 +1,26 @@
+.Select {
+  @extend .Input;
+
+  // Hide browser default dropdown
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+
+  &--normal {
+    border: 1px solid $ui-element-tertiary;
+    background-image: url('../../images/chevronUpDown.svg');
+  }
+  &--hover {
+    border: 1px solid $ui-element-secondary;
+    background-image: url('../../images/chevronUpDown.svg');
+  }
+  &--active {
+    border: 2px solid $ui-element-secondary;
+    background-image: url('../../images/chevronUpDown.svg');
+  }
+  &--disable {
+    border: 1px solid $ui-element-tertiary;
+    background-color: $ui-element-inactive;
+    background-image: url('../../images/chevronUpDown.svg');
+  }
+}

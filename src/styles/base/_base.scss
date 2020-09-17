@@ -1,0 +1,45 @@
+section {
+  width: 100%;
+}
+.custom-padding {
+  margin: 0;
+  padding: 100px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-heading {
+  margin-bottom: 50px;
+}

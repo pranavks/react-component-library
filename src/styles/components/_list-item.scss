@@ -1,0 +1,59 @@
+.ListItem {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 288px;
+  .icon {
+    display: none;
+  }
+  .item {
+    color: $ui-text-primary;
+    margin-bottom: 5px;
+  }
+  .subtitle {
+    color: $ui-text-secondary;
+    font-size: 14;
+  }
+  .flex-item:first-child {
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-right: 8px;
+    }
+  }
+  .flex-item:last-child {
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    img {
+      margin-left: 8px;
+    }
+  }
+
+  &--subitem {
+    padding: 9px;
+  }
+  &--tiny {
+    padding: 8px;
+    font-size: 14px;
+    .item {
+      color: $ui-text-secondary;
+    }
+    .flex-item:last-child {
+      color: $ui-text-secondary;
+    }
+  }
+  &--item5 {
+    .icon {
+      display: block;
+    }
+  }
+  &--item6 {
+    .icon {
+      display: block;
+    }
+  }
+}

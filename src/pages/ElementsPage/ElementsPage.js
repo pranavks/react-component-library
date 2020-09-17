@@ -1,15 +1,14 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import ContentArea from './ContentArea';
-import '../layout.scss';
 
-function FoundationsPage() {
+function ElementsPage() {
   return (
-    <div className="FoundationsPage">
+    <div className="ElementsPage">
       <Sidebar />
       <ContentArea />
     </div>
   );
 }
 
-export default FoundationsPage;
+export default ElementsPage;

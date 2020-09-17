@@ -1,0 +1,73 @@
+.Colors {
+  width: 220px;
+  height: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  &__color {
+    height: 120px;
+  }
+  &__details {
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+  &__colorName {
+    margin-bottom: 8px;
+  }
+
+  &--brand-primary &__color {
+    background-color: $brand-primary;
+  }
+  &--brand-primary-light &__color {
+    background-color: $brand-primary-light;
+  }
+  &--brand-secondary &__color {
+    background-color: $brand-secondary;
+  }
+  &--brand-secondary-light &__color {
+    background-color: $brand-secondary-light;
+  }
+  &--ui-text-primary &__color {
+    background-color: $ui-text-primary;
+  }
+  &--ui-text-secondary &__color {
+    background-color: $ui-text-secondary;
+  }
+  &--ui-text-tertiary &__color {
+    background-color: $ui-text-tertiary;
+  }
+  &--ui-text-success &__color {
+    background-color: $ui-text-success;
+  }
+  &--ui-text-error &__color {
+    background-color: $ui-text-error;
+  }
+  &--ui-text-white &__color {
+    background-color: $ui-text-white;
+  }
+  &--ui-text-link &__color {
+    background-color: $ui-text-link;
+  }
+  &--ui-element-primary &__color {
+    background-color: $ui-element-primary;
+  }
+  &--ui-element-secondary &__color {
+    background-color: $ui-element-secondary;
+  }
+  &--ui-element-tertiary &__color {
+    background-color: $ui-element-tertiary;
+  }
+  &--ui-element-success &__color {
+    background-color: $ui-element-success;
+  }
+  &--ui-element-error &__color {
+    background-color: $ui-element-error;
+  }
+  &--ui-element-neutral &__color {
+    background-color: $ui-element-neutral;
+  }
+  &--ui-element-overlay &__color {
+    background-color: $ui-element-overlay;
+  }
+}

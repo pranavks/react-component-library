@@ -1,0 +1,162 @@
+.section1 {
+  position: relative;
+
+  .Toggle {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+
+  .flex-item:first-child {
+    flex-basis: 60%;
+  }
+  .flex-item:last-child {
+    flex-basis: 40%;
+  }
+
+  .d-flex2 {
+    margin-top: 50px;
+    button {
+      margin-left: 10px;
+    }
+  }
+  @media (max-width: 767px) {
+    .d-flex1 {
+      flex-direction: column;
+      .flex-item:first-child {
+        margin-bottom: 50px;
+      }
+    }
+    .d-flex2 {
+      input {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.section2 {
+  background-color: #ebeff8;
+  .Avatar {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  button {
+    margin-top: 20px;
+  }
+  .d-flex {
+    .flex-item {
+      flex-basis: 0;
+      flex-grow: 1;
+      padding: 40px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .d-flex {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .d-flex {
+      .flex-item {
+        padding: 40px 0;
+      }
+    }
+  }
+}
+
+.section3 {
+  .d-flex1 {
+    align-items: center;
+    margin-bottom: 50px;
+    .flex-item-outer:first-child {
+      flex-basis: 70%;
+      padding-right: 30px;
+    }
+    .flex-item-outer:last-child {
+      flex-basis: 30%;
+    }
+  }
+  .ListItem {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .d-flex1 {
+      flex-direction: column;
+      .flex-item-outer:first-child {
+        padding-right: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.section4 {
+  background-color: #ebeff8;
+  .d-flex1 {
+    .flex-item:first-child {
+      flex-basis: 70%;
+      padding-right: 30px;
+    }
+    .flex-item:last-child {
+      flex-basis: 30%;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .d-flex2 {
+    margin-bottom: 20px;
+    justify-content: space-between;
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .d-flex3 {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 575px) {
+    .d-flex1 {
+      flex-direction: column;
+      .flex-item:first-child {
+        padding-right: 0;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+.main-footer {
+  background-color: $ui-element-tertiary;
+  padding: 50px 0;
+  .d-flex {
+    justify-content: center;
+    button {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

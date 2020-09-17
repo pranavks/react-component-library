@@ -1,7 +1,9 @@
+@import '../abstracts/variables';
 .App {
   height: 100%;
 
-  & > div {
+  & > .FoundationsPage,
+  & > .ElementsPage {
     display: flex;
     width: 100%;
     height: 100%;
@@ -38,6 +40,10 @@ main.ContentArea {
 
 section {
   margin: 100px 0;
+}
+
+.light-text {
+  color: $ui-text-secondary;
 }
 
 .flex-layout {

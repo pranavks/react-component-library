@@ -1,11 +1,11 @@
 import React from 'react';
-import './components.scss';
 
 const Textarea = (props) => (
   <textarea
-    class={'Textarea Textarea--' + props.modifier}
+    class={`Textarea Textarea--${props.modifier} ${props.className}`}
+    id={props.id}
     disabled={props.isDisabled}
-    value={props.value}
+    placeholder={props.placeholder}
   />
 );
 

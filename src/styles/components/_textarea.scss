@@ -1,0 +1,52 @@
+.Textarea {
+  border: 1px solid $ui-element-tertiary;
+  border-radius: 24px;
+  color: $ui-text-secondary;
+  padding: 16px;
+  min-height: 150px;
+  min-width: 288px;
+  font-family: $open-sans;
+  background-repeat: no-repeat;
+  background-position: 95% 10px;
+  outline: none;
+  position: relative;
+  font-size: 16px;
+
+  &--normal {
+    border: 1px solid $ui-element-tertiary;
+  }
+  &--hover {
+    border: 1px solid $ui-element-secondary;
+  }
+  &--active {
+    border: 2px solid $ui-element-secondary;
+  }
+  &--error {
+    border: 1px solid $ui-element-error;
+    background-image: url('../../images/alertOctagon.svg');
+  }
+  &--success {
+    border: 1px solid $ui-element-success;
+    background-image: url('../../images/checkGreen.svg');
+  }
+  &--disable {
+    border: 1px solid $ui-element-tertiary;
+    background-color: $ui-element-inactive;
+  }
+
+  &:hover {
+    border: 1px solid $ui-element-secondary;
+  }
+  &:focus {
+    border: 2px solid $ui-element-secondary;
+  }
+  &::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 5px;
+    background-image: url('../../images/textAreaDragger.svg');
+    position: absolute;
+    z-index: 8;
+  }
+}

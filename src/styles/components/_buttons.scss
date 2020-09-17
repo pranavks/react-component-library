@@ -1,0 +1,89 @@
+.Button {
+  border-radius: 24px;
+  border: 1px solid transparent;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 140%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 14px;
+  user-select: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary-default {
+    background-color: $brand-primary;
+    color: #fff;
+    &:hover {
+      background-color: $brand-primary-light;
+      transition: 0.2s;
+    }
+  }
+  &--primary-outline {
+    background-color: #fff;
+    color: $brand-primary;
+    border: 1px solid $brand-primary;
+  }
+  &--primary-minimal {
+    background-color: #fff;
+    color: $brand-primary;
+  }
+  &--secondary-default {
+    background-color: $brand-secondary;
+    color: #fff;
+  }
+  &--secondary-outline {
+    background-color: #fff;
+    color: $brand-secondary;
+    border: 1px solid $brand-secondary;
+  }
+  &--secondary-minimal {
+    background-color: #fff;
+    color: $brand-secondary;
+  }
+  &--icon-default {
+    background-color: #fff;
+    min-width: auto;
+    padding: 7px;
+  }
+  &--state-primary-hover {
+    background-color: $brand-primary-light;
+    color: #fff;
+  }
+  &--state-primary-active {
+    background-color: $brand-primary;
+    color: #fff;
+  }
+  &--state-primary-loading {
+    background-color: $brand-primary;
+    padding: 7px 22px;
+  }
+  &--state-secondary-hover {
+    background-color: $brand-secondary-light;
+    color: #fff;
+  }
+  &--state-secondary-active {
+    background-color: $brand-secondary;
+    color: #fff;
+  }
+  &--state-secondary-loading {
+    background-color: $brand-secondary;
+    padding: 7px 22px;
+  }
+  &--state-global-success {
+    background-color: $ui-text-success;
+    padding: 7px 22px;
+  }
+  &--state-global-error {
+    background-color: $ui-text-error;
+    padding: 7px 22px;
+  }
+  &--state-global-disabled {
+    background-color: #fff;
+    color: $ui-element-tertiary;
+  }
+}
